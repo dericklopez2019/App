@@ -1,0 +1,7 @@
+{
+  "name": "controlplus",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
