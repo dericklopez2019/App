@@ -1,0 +1,314 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>ControlPLUS - ASETEC COMPUTACION</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="cerrarModal()">
+        <ion-icon slot="icon-only" name="close"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-content>
+      <ion-row>
+        <ion-col size="12" class="ion-text-center">
+          <label>INGRESO DE PRODUCTOS</label>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="3">
+          <ion-item>
+            <ion-input label="Código Interno:"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="3">
+        </ion-col>
+        <ion-col size="6">
+          <ion-button shape="round">
+            <ion-icon name="refresh-outline"> </ion-icon>
+          </ion-button>
+          <ion-button shape="round">
+            <ion-icon name="play-skip-back-outline" > </ion-icon>
+          </ion-button>
+          <ion-button shape="round">
+            <ion-icon name="play-outline" class="invert"> </ion-icon>
+          </ion-button>
+          <ion-button shape="round">
+            <ion-icon name="play-outline"> </ion-icon>
+          </ion-button>
+          <ion-button shape="round">
+            <ion-icon name="play-skip-forward-outline"> </ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12" size-lg="9">
+          <ion-item>
+            <ion-input label="Nombre" label-placement="floating" type="text"></ion-input>
+          </ion-item>
+        </ion-col>
+
+        <ion-col size="12" size-lg="3">
+          <ion-item>
+            <ion-input label="Exitencias" label-placement="floating" type="text"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12" size-lg="3" >
+          <ion-item>
+            <ion-input label="Descuento:" label-placement="floating" type="text"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="12" size-lg="3" >
+          <ion-item>
+            <ion-input label="Cod Barras/Proveed:" label-placement="floating" type="text"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="12" size-lg="3" >
+          <ion-item>
+            <ion-input label="Cód del Porducto" label-placement="floating" type="text"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="12" size-lg="3" >
+          <ion-item>
+            <ion-input label="Bono Farm /Oesi Lbs/ Grupo Bonificacion:" label-placement="floating" type="text"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="4">
+          <ion-checkbox labelPlacement="end">Aplicar a todas las Sucs. por Cod. Agrup.</ion-checkbox>
+        </ion-col>
+        <ion-col size="4">
+          <ion-checkbox labelPlacement="end">Utilizar el Código interno como Cód Barras</ion-checkbox>
+        </ion-col>
+        <ion-col size="4" class="ion-align-self-end">
+          <div class="centrar">
+            <ion-button>
+              <ion-icon name="apps-outline"></ion-icon>
+            </ion-button>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="4">
+          <ion-label>
+            <h2>Precios por unidad:</h2>
+          </ion-label>
+        </ion-col>
+        <ion-col size="3">
+          <ion-label>
+            <h2>% Gan.</h2>
+          </ion-label>
+        </ion-col>
+        <ion-col size="3">
+          <ion-label>
+            <h2>Ganancia:</h2>
+          </ion-label>
+        </ion-col>
+        <ion-col size="3">
+          <ion-label>
+            <h2>Precio de venta:</h2>
+          </ion-label>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="3">
+          <ion-item>
+            <ion-input label="Precio costo facturado:"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input label="Costo de fletes:"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input label="Otros costos:"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input label="COSTO TOTAL:"></ion-input>
+          </ion-item>
+        </ion-col>
+        <ion-col size="3">
+          <ion-item>
+            <ion-input label=" Credito"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input label="Plan Salud"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input label="Mayorista"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input label="Público"></ion-input>
+          </ion-item>
+          <ion-col size="4">
+            <ion-checkbox labelPlacement="end">Un solo precio de venta</ion-checkbox>
+          </ion-col>
+        </ion-col>
+        <ion-col size="3">
+          <ion-item>
+            <ion-input label=""></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input label=""></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input label=""></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input label=""></ion-input>
+          </ion-item>
+
+        </ion-col>
+        <ion-col size="3">
+          <ion-item>
+            <ion-input label=""></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input label=""></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input label=""></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input label=""></ion-input>
+          </ion-item>
+          <ion-col size="4">
+            <ion-button>
+              <ion-label>Red a 5 c</ion-label>
+            </ion-button>
+            <ion-button>
+              <ion-label>Red a 10 c</ion-label>
+            </ion-button>
+           </ion-col>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6"></ion-col>
+        <ion-col size="6">
+          <ion-item>
+            <ion-input label="PRECIO DE DESCUENTO:"></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="1">
+          <ion-button shape="round">
+            <ion-icon name="cart-outline"></ion-icon>
+          </ion-button>
+          <ion-row>
+            <ion-label>Categorías</ion-label>
+          </ion-row>
+        </ion-col>
+
+        <ion-col size="1">
+          <ion-button shape="round">
+            <ion-icon name="trending-up-outline"></ion-icon>
+          </ion-button>
+          <ion-row>
+            <ion-label>Mayoreo</ion-label>
+          </ion-row>
+        </ion-col>
+
+        <ion-col size="1">
+          <ion-button shape="round">
+            <ion-icon name="bag-add-outline"></ion-icon>
+          </ion-button>
+          <ion-row>
+            <ion-label>Combos</ion-label>
+          </ion-row>
+        </ion-col>
+
+        <ion-col size="1">
+          <ion-button shape="round">
+            <ion-icon name="bag-check-outline"></ion-icon>
+          </ion-button>
+          <ion-row>
+            <ion-label>Bonifica</ion-label>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <ion-button>
+            <ion-label>Datos Adicionales</ion-label>
+          </ion-button>
+          <ion-button>
+            <ion-label>Imagen</ion-label>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6">
+          <ion-item>
+            <ion-label position="stacked">USO / UBICACION / INFO </ion-label>
+            <ion-textarea rows="3"></ion-textarea>
+          </ion-item>
+        </ion-col>
+        <ion-col size="4">
+          <ion-item>
+            <ion-input label="Unid x Fardo /Dispensador / Caja "></ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6">
+          <ion-item>
+            <ion-label position="stacked">PROD. / SIMILAR - FENERICO / DOSIS </ion-label>
+            <ion-textarea rows="3"></ion-textarea>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6">
+          <ion-label>Usuario que modificó por última vez los datos del producto:</ion-label>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6"></ion-col>
+        <ion-col size="6">
+          <ion-checkbox labelPlacement="end">Rep-2</ion-checkbox>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="6"></ion-col>
+          <ion-col size="6">
+            <ion-checkbox labelPlacement="end">Rep-3</ion-checkbox>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="6">
+            <ion-button shape="round" >
+              <ion-icon name="document-outline"> </ion-icon>
+              <ion-label>Agregar</ion-label>
+            </ion-button>
+            <ion-button shape="round">
+              <ion-icon name="return-up-back-outline"> </ion-icon>
+              <ion-label>Deshacer</ion-label>
+            </ion-button>
+            <ion-button shape="round">
+              <ion-icon name="save-outline"> </ion-icon>
+              <ion-label>Guardar</ion-label>
+            </ion-button>
+            <ion-button shape="round">
+              <ion-icon name="create-outline"> </ion-icon>
+              <ion-label>Modificar</ion-label>
+            </ion-button>
+          </ion-col>
+          <ion-col size="6">
+            <ion-button shape="round">
+              <ion-icon name="print-outline"> </ion-icon>
+            </ion-button>
+            <ion-button shape="round">
+              <ion-icon name="search-outline"> </ion-icon>
+            </ion-button>
+            <ion-button shape="round">
+              <ion-icon name="exit-outline"> </ion-icon>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

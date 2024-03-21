@@ -1,0 +1,10 @@
+ion-button ion-label {
+  text-transform: capitalize;
+}
+.invert{
+ transform: scaleX(-1);
+}
+.centrar{
+  display: grid;
+  place-items: center;
+}

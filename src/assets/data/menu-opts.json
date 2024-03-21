@@ -1,0 +1,932 @@
+[
+  {
+    "icon": "home-outline",
+    "name": "Inicio",
+    "redirectTo": "/inicio"
+  },
+  {
+    "icongroup": "apps-outline",
+    "group": "Inventario",
+    "options": [
+      {
+        "icon": "cart-outline",
+        "name": "Ingreso de Compras",
+        "redirectTo": "/"
+      },
+      {
+        "icon": "bag-outline",
+        "name": "Ingreso de Productos",
+        "redirectTo": "/ingreso-de-productos-modal"
+      },
+      {
+        "icon": "archive-outline",
+        "name": "Ingreso de Bodega",
+        "redirectTo": "/ingreso-de-bodegas-modal"
+      },
+      {
+        "icon": "map-outline",
+        "name": "Ingreso de Rutas",
+        "redirectTo": "/ingreso-de-rutas-modalal"
+      },
+      {
+        "icon": "pricetag-outline",
+        "name": "Ingreso de Categorias",
+        "redirectTo": "/ingreso-de-categorias-modalal"
+      },
+      {
+        "icon": "pricetags-outline",
+        "name": "Actualizacion de Precios",
+        "redirectTo": "/"
+      },
+      {
+        "icon": "file-tray-stacked-outline",
+        "name": "Tipos de inventarios",
+        "redirectTo": "/"
+      },
+      {
+        "icon": "enter-outline",
+        "name": "Inventario de Apertura",
+        "redirectTo": "/"
+      },
+      {
+        "icongroup": "briefcase-outline",
+        "group": "Ingreso de inventario Fisico",
+        "options": [
+          {
+            "icon": "reader-outline",
+            "name": "Inventario Completo",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "reader-outline",
+            "name": "Inventario Por Categorias",
+            "redirectTo": "/"
+          }
+        ]
+
+      }
+      ,
+      {
+        "icon": "stats-chart-outline",
+        "name": "Ajuste de inventario",
+        "redirectTo": "/"
+      },
+      {
+        "icon": "navigate-outline",
+        "name": "Traslado de Productos",
+        "redirectTo": "/"
+      },
+      {
+        "icon": "trending-up-outline",
+        "name": "Asignar Comisiones",
+        "redirectTo": "/"
+      },
+      {
+        "icon": "exit-outline",
+        "name": "Devolucion de Productos",
+        "redirectTo": "/"
+      },
+      {
+        "icon": "close-circle-outline",
+        "name": "Desactivacion de Productos",
+        "redirectTo": "/"
+      }
+    ]
+  },
+  {
+    "group": "Clientes",
+    "icongroup": "body-outline",
+    "options": [
+      {
+        "icon": "person-add-outline",
+        "name": "Ingreso de Clientes",
+        "redirectTo": "/ingreso-de-clientes-modal"
+      },
+      {
+        "icon": "wallet-outline",
+        "name": "Saldo de Clientes",
+        "redirectTo": "/"
+      },
+      {
+        "icon": "stats-chart-outline",
+        "name": "Pagos de Clientes",
+        "redirectTo": "/"
+      },
+      {
+        "icon": "file-tray-full-outline",
+        "name": "Historial de Clientes al Contado",
+        "redirectTo": "/"
+      },
+      {
+        "icon": "file-tray-outline",
+        "name": "Historial de Clientes al Credito",
+        "redirectTo": "/"
+      },
+      {
+        "icon": "file-tray-stacked-outline",
+        "name": "Historial de Clientes al (Contado-Credito)",
+        "redirectTo": "/"
+      },
+      {
+        "icon": "receipt-outline",
+        "name": "Historial Facturacion C/F",
+        "redirectTo": "/"
+      },
+      {
+        "icon": "document-lock-outline",
+        "name": "Facturas Canceladas al Credito",
+        "redirectTo": "/"
+      }
+    ]
+  },
+  {
+    "group": "Cajas",
+    "icongroup": "desktop-outline",
+    "options": [
+      {
+        "icon": "enter-outline",
+        "name": "Ingreso de Cajas",
+        "redirectTo": "/"
+      },
+      {
+        "icon": "list-outline",
+        "name": "Ingreso de Turnos",
+        "redirectTo": "/"
+      },
+      {
+        "icon": "business-outline",
+        "name": "SAT",
+        "redirectTo": "/"
+      },
+      {
+        "icon": "checkmark-circle-outline",
+        "name": "Asignar Autorizacion SAT a caja",
+        "redirectTo": "/"
+      },
+      {
+        "icongroup": "trending-up-outline",
+        "group": "Movimiento de Cajas",
+        "options": [
+          {
+            "icon": "open-outline",
+            "name": "Apertura de Cajas",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "cash-outline",
+            "name": "Retiro de Efectivo",
+            "redirectTo": "/"
+          }
+        ]
+      },
+      {
+        "icongroup": "trending-down-outline",
+        "group": "Gastos",
+        "options": [
+          {
+            "icon": "document-outline",
+            "name": "Tipo de Gastos",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "reader-outline",
+            "name": "Ingreso de Gastos",
+            "redirectTo": "/"
+          }
+        ]
+      },
+      {
+        "icon": "exit-outline",
+        "name": "Cierre de cajas",
+        "redirectTo": "/"
+      }
+    ]
+  },
+  {
+    "group": "Facturacion",
+    "icongroup": "receipt-outline",
+    "options": [
+      {
+        "icon": "file-tray-outline",
+        "name": "Al Contado",
+        "redirectTo": "/"
+      },
+      {
+        "icon": "file-tray-full-outline",
+        "name": "Al Credito",
+        "redirectTo": "/"
+      },
+      {
+        "icongroup": "document-lock-outline",
+        "group": "Anulacion de Facturas",
+        "options": [
+          {
+            "icon": "file-tray-outline",
+            "name": "Al Contado",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "file-tray-full-outline",
+            "name": "Al Credito",
+            "redirectTo": "/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "group": "Reportes",
+    "icongroup": "stats-chart-outline",
+    "options": [
+      {
+        "icongroup": "briefcase-outline",
+        "group": "Inventarios",
+        "options": [
+          {
+            "group": "Lista de Precios",
+            "icongroup": "reader-outline",
+            "options": [
+              {
+              "icon": "trending-up-outline",
+              "name": "Venta",
+              "redirectTo": "/"
+              },
+              {
+                "icon": "reader-outline",
+                "name": "Venta Orden Numerico",
+                "redirectTo": "/"
+              },
+              {
+                "icon": "person-add-outline",
+                "name": "Mayorista",
+                "redirectTo": "/"
+              },
+              {
+                "icon": "person-outline",
+                "name": "Distribuidor",
+                "redirectTo": "/"
+              },
+              {
+                "icon": "clipboard-outline",
+                "name": "Por Categorias",
+                "redirectTo": "/"
+              }
+           ]
+          },
+          {
+            "icon": "ban-outline",
+            "name": "Sin precios",
+            "redirectTo": "/"
+          },
+          {
+            "group": "Report para Levantado Fisico",
+            "icongroup": "document-text-outline",
+            "options": [
+              {
+              "icon": "bar-chart-outline",
+              "name": "Todo el Inventario",
+              "redirectTo": "/"
+              },
+              {
+                "icon": "clipboard-outline",
+                "name": "Por Categoria",
+                "redirectTo": "/"
+              },
+              {
+                "icon": "archive-outline",
+                "name": "Para Levantado Fisico",
+                "redirectTo": "/"
+              }
+           ]
+          },
+          {
+            "group": "EXISTENCIAS",
+            "icongroup": "bar-chart-outline",
+            "options": [
+              {
+              "icon": "trending-up-outline",
+              "name": "En Orden Numerico",
+              "redirectTo": "/"
+              },
+              {
+                "icon": "text-outline",
+                "name": "En Orden Alfabetico",
+                "redirectTo": "/"
+              },
+              {
+                "icon": "document-text-outline",
+                "name": "Costos de Existencias Completo",
+                "redirectTo": "/"
+              },
+              {
+                "icon": "clipboard-outline",
+                "name": "Costos de Existencias Por Categorias",
+                "redirectTo": "/"
+              },
+              {
+                "icon": "swap-vertical-outline",
+                "name": "Codigo Del - Al",
+                "redirectTo": "/"
+              }
+           ]
+          },
+          {
+            "icon": "basket-outline",
+            "name": "Compras por Producto",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "person-add-outline",
+            "name": "Compras por Proveedor",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "receipt-outline",
+            "name": "Compras por Factura",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "book-outline",
+            "name": "Compras en General",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "document-text-outline",
+            "name": "Compras al Contado (Por Periodo)",
+            "redirectTo": "/"
+          },
+          {
+            "group": "Devoluciones",
+            "icongroup": "trending-down-outline",
+            "options": [
+              {
+              "icon": "document-text-outline",
+              "name": "Por Periodo",
+              "redirectTo": "/"
+              },
+              {
+                "icon": "basket-outline",
+                "name": "Por Producto",
+                "redirectTo": "/"
+              },
+              {
+                "icon": "thumbs-down-outline",
+                "name": "Por Devolucion",
+                "redirectTo": "/"
+              }
+           ]
+          },
+          {
+            "icon": "list-outline",
+            "name": "Pedidos de Productos",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "reader-outline",
+            "name": "Sobrante y Faltantes",
+            "redirectTo": "/"
+          },
+          {
+            "group": "Traslados",
+            "icongroup": "swap-horizontal-outline",
+            "options": [
+              {
+              "icon": "document-outline",
+              "name": "Por Periodo",
+              "redirectTo": "/"
+              },
+              {
+                "icon": "document-text-outline",
+                "name": "Por Periodo Por Codigo",
+                "redirectTo": "/"
+              },
+              {
+                "icon": "cart-outline",
+                "name": "Por Periodo Por Sucursal",
+                "redirectTo": "/"
+              },
+              {
+                "icon": "trending-up-outline",
+                "name": "Por Numero de Traslado",
+                "redirectTo": "/"
+              }
+           ]
+          }
+        ]
+      },
+      {
+        "group": "Clientes",
+        "icongroup": "people-outline",
+        "options": [
+          {
+            "icon": "analytics-outline",
+            "name": "Reporte General Saldo de Clientes",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "document-text-outline",
+            "name": "Estado de Cuentas del Cliente",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "document-lock-outline",
+            "name": "Facturas Vencidas a la Fecha",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "sync-outline",
+            "name": "Pagos Por Periodo",
+            "redirectTo": "/"
+          }
+        ]
+      },
+      {
+        "group": "Facturacion",
+        "icongroup": "receipt-outline",
+        "options": [
+          {
+            "icon": "bar-chart-outline",
+            "name": "Ventas del Dia",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "analytics-outline",
+            "name": "Ventas Por Periodo",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "document-text-outline",
+            "name": "Ventas por Periodo [CONSOLIDADAS]",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "file-tray-full-outline",
+            "name": "Ventas al Credito Por Periodo",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "lock-closed-outline",
+            "name": "Cierre de Caja",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "trending-up-outline",
+            "name": "Movimiento de Caja Mensual",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "clipboard-outline",
+            "name": "Ventas por Categoria",
+            "redirectTo": "/"
+          },
+          {
+            "icongroup": "cash-outline",
+            "group": "COMISIONES",
+            "options": [
+              {
+                "icon": "person-add-outline",
+                "name": "Comisiones Por Vendedor",
+                "redirectTo": "/"
+              },
+              {
+                "icon": "analytics-outline",
+                "name": "Comisiones Por Periodo",
+                "redirectTo": "/"
+              }
+            ]
+          },
+          {
+            "icon": "basket-outline",
+            "name": "Ventas Por Producto",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "calendar-number-outline",
+            "name": "Ventas Diarias Por Mes",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "calendar-outline",
+            "name": "Ventas Mensuales Por Año",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "document-lock-outline",
+            "name": "Factuas Anuladas Por Periodo",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "document-text-outline",
+            "name": "Cotizaciones Por Periodo",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "reader-outline",
+            "name": "Por Cotizacion",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "receipt-outline",
+            "name": "Por Factura",
+            "redirectTo": "/"
+          }
+        ]
+      },
+      {
+        "group": "Proveedores",
+        "icongroup": "people-outline",
+        "options": [
+          {
+            "icon": "exit-outline",
+            "name": "Soldos de Proveedores",
+            "redirectTo": "/"
+          }
+        ]
+      },
+      {
+        "group": "SEGURIDAD",
+        "icongroup": "people-outline",
+        "options": [
+          {
+            "icon": "exit-outline",
+            "name": "Niveles",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "exit-outline",
+            "name": "Usuarios",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "exit-outline",
+            "name": "Menus del Sistema",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "exit-outline",
+            "name": "Entrada - Salidas del Sistemas",
+            "redirectTo": "/"
+          }
+        ]
+      },
+      {
+        "group": "Gastos",
+        "icongroup": "people-outline",
+        "options": [
+          {
+            "icon": "exit-outline",
+            "name": "Por Periodo",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "exit-outline",
+            "name": "Clasificados Por Periodo",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "exit-outline",
+            "name": "Por Cuenta Por Periodo",
+            "redirectTo": "/"
+          }
+        ]
+      },
+      {
+        "group": "BANCOS",
+        "icongroup": "people-outline",
+        "options": [
+          {
+            "icon": "exit-outline",
+            "name": "Bnacos",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "exit-outline",
+            "name": "Cuentas Bancarias",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "exit-outline",
+            "name": "Ingresos",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "exit-outline",
+            "name": "Egresos",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "exit-outline",
+            "name": "Saldos de Cuentas",
+            "redirectTo": "/"
+          }
+        ]
+      },
+      {
+        "group": "CONSULTAS [NAVEGACION]",
+        "icongroup": "people-outline",
+        "options": [
+          {
+            "icon": "exit-outline",
+            "name": "FACTURAS AL CONTADO",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "exit-outline",
+            "name": "FACTURAS AL CREDITO",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "exit-outline",
+            "name": "COTIZACIONES",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "exit-outline",
+            "name": "PEDIDOS",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "exit-outline",
+            "name": "Inventarios Fisicos",
+            "redirectTo": "/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "group": "Mantenimiento",
+    "icongroup": "construct-outline",
+    "options": [
+      {
+        "icon": "cog-outline",
+        "name": "Configuracion General del Sistema",
+        "redirectTo": "/"
+      },
+      {
+        "icon": "pricetags-outline",
+        "name": "Tipos de Precios",
+        "redirectTo": "/"
+      },
+      {
+        "icon": "call-outline",
+        "name": "Tipos de Telefonos",
+        "redirectTo": "/"
+      },
+      {
+        "icon": "cash-outline",
+        "name": "Ingreso de Denominaciones [Billetes - Monedas]",
+        "redirectTo": "/"
+      },
+      {
+        "icon": "card-outline",
+        "name": "Tipos de Trajeta de Credito",
+        "redirectTo": "/"
+      },
+      {
+        "icon": "receipt-outline",
+        "name": "Tipos de Facturacion",
+        "redirectTo": "/"
+      },
+      {
+        "icon": "cart-outline",
+        "name": "Formas de pago",
+        "redirectTo": "/"
+      },
+      {
+        "group": "BANCOS",
+        "icongroup": "briefcase-outline",
+        "options": [
+          {
+            "icon": "business-outline",
+            "name": "Bancos",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "card-outline",
+            "name": "Cuentas Bancarias",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "trending-up-outline",
+            "name": "INGRESOS",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "trending-down-outline",
+            "name": "EGRESOS",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "analytics-outline",
+            "name": "SALDOS DE CUENTAS BANCARIAS",
+            "redirectTo": "/"
+          }
+        ]
+      },
+      {
+        "icon": "browsers-outline",
+        "name": "Explorador Web",
+        "redirectTo": "/"
+      },
+      {
+        "icon": "information-circle-outline",
+        "name": "Acerca De...",
+        "redirectTo": "/"
+      },
+      {
+        "icon": "information-outline",
+        "name": "INFO -CINTA",
+        "redirectTo": "/"
+      }
+    ]
+  },
+  {
+    "group": "Proveedor",
+    "icongroup": "people-outline",
+    "options": [
+      {
+        "icon": "person-add-outline",
+        "name": "Ingresos de Proveedores",
+        "redirectTo": "/"
+      },
+      {
+        "icon": "wallet-outline",
+        "name": "Saldos",
+        "redirectTo": "/"
+      },
+      {
+        "icon": "cash-outline",
+        "name": "Pagos",
+        "redirectTo": "/"
+      }
+    ]
+  },
+  {
+    "group": "Seguridad",
+    "icongroup": "lock-closed-outline",
+    "options": [
+      {
+        "icon": "filter-outline",
+        "name": "Niveles del Sistema",
+        "redirectTo": "/"
+      },
+      {
+        "icon": "people-outline",
+        "name": "Usuarios del Sistema",
+        "redirectTo": "/"
+      },
+      {
+        "icon": "create-outline",
+        "name": "Editor de Menus",
+        "redirectTo": "/"
+      },
+      {
+        "icon": "document-outline",
+        "name": "Configuracion de Formularios",
+        "redirectTo": "/"
+      },
+      {
+        "icon": "swap-horizontal-outline",
+        "name": "Configuracion de Operaciones",
+        "redirectTo": "/"
+      },
+      {
+        "icon": "storefront-outline",
+        "name": "Asignacio de Bodegas",
+        "redirectTo": "/"
+      },
+      {
+        "icon": "terminal-outline",
+        "name": "Defaults del Sistema",
+        "redirectTo": "/"
+      },
+      {
+        "icon": "information-circle-outline",
+        "name": "DATOS DE LA EMPRESA",
+        "redirectTo": "/"
+      },
+      {
+        "icon": "sync-outline",
+        "name": "Entradas y Salidas del Sistema",
+        "redirectTo": "/"
+      },
+      {
+        "icon": "key-outline",
+        "name": "Cambiar Contraseña",
+        "redirectTo": "/"
+      },
+      {
+        "group": "UTILIDADES",
+        "icongroup": "clipboard-outline",
+        "options": [
+          {
+            "icon": "document-outline",
+            "name": "Por Periodo",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "document-text-outline",
+            "name": "Detallado Por Periodo",
+            "redirectTo": "/"
+          }
+        ]
+      },
+      {
+        "icon": "bar-chart-outline",
+        "name": "Balance de Saldos",
+        "redirectTo": "/"
+      },
+      {
+        "icon": "server-outline",
+        "name": "Backup del Sistema a la Fecha",
+        "redirectTo": "/"
+      },
+      {
+        "icon": "exit-outline",
+        "name": "SALIR DEL SISTEMA",
+        "redirectTo": "/"
+      }
+    ]
+  },
+  {
+    "group": "Estadisticas",
+    "icongroup": "bar-chart-outline",
+    "options": [
+      {
+        "group": "FACTURACION",
+        "icongroup": "receipt-outline",
+        "options": [
+          {
+            "icon": "calendar-number-outline",
+            "name": "Ventas Por Periodo MENSUALES [Consolidadas UNIDADES]",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "calendar-outline",
+            "name": "Ventas Por Periodo ANUALES [Consolidadas UNIDADES]",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "document-text-outline",
+            "name": "Ventas Por Periodo DIARIA [Consolidadas UNIDADES]",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "calendar-number-outline",
+            "name": "Ventas Por Periodo MENSUALES [Consolidadas VALORES]",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "calendar-outline",
+            "name": "Ventas Por Periodo ANUALES [Consolidadas VALORES]",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "document-text-outline",
+            "name": "Ventas Por Periodo DIARIAS [Consolidadas VALORES]",
+            "redirectTo": "/"
+          }
+        ]
+      },
+      {
+        "group": "CLIENTES",
+        "icongroup": "people-outline",
+        "options": [
+          {
+            "icon": "file-tray-full-outline",
+            "name": "Ventas al Credito Por Periodo MENSUALES",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "file-tray-outline",
+            "name": "Ventas al Contado Por Periodo MENSUALES",
+            "redirectTo": "/"
+          }
+        ]
+      },
+      {
+        "group": "INVENTARIOS",
+        "icongroup": "apps-outline",
+        "options": [
+          {
+            "icon": "trending-up-outline",
+            "name": "Utilidades Por Periodo de Producyos mas Vendidos",
+            "redirectTo": "/"
+          },
+          {
+            "icon": "trending-down-outline",
+            "name": "Productos Sin Movimientos Por Periodo",
+            "redirectTo": "/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "icon": "exit-outline",
+    "name": "Salir",
+    "redirectTo": "/"
+  }
+
+]

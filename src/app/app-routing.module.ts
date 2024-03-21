@@ -3,13 +3,33 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    path: 'inicio',
+    loadChildren: () => import('./pages/inicio/inicio.module').then( m => m.InicioPageModule)
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'inicio',
     pathMatch: 'full'
+  },
+  {
+    path: 'ingreso-de-productos-modal',
+    loadChildren: () => import('./modal/ingreso-de-productos-modal/ingreso-de-productos-modal.module').then( m => m.IngresoDeProductosModalPageModule)
+  },
+  {
+    path: 'ingreso-de-bodegas-modal',
+    loadChildren: () => import('./modal/ingreso-de-bodegas-modal/ingreso-de-bodegas-modal.module').then( m => m.IngresoDeBodegasModalPageModule)
+  },
+  {
+    path: 'ingreso-de-rutas-modalal',
+    loadChildren: () => import('./modal/ingreso-de-rutas-modalal/ingreso-de-rutas-modalal.module').then( m => m.IngresoDeRutasModalalPageModule)
+  },
+  {
+    path: 'ingreso-de-categorias-modalal',
+    loadChildren: () => import('./modal/ingreso-de-categorias-modalal/ingreso-de-categorias-modalal.module').then( m => m.IngresoDeCategoriasModalalPageModule)
+  },
+  {
+    path: 'ingreso-de-clientes-modal',
+    loadChildren: () => import('./modal/ingreso-de-clientes-modal/ingreso-de-clientes-modal.module').then( m => m.IngresoDeClientesModalPageModule)
   },
 ];
 
