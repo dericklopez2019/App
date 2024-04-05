@@ -12,9 +12,19 @@ export class IngresoDeCategoriasModalalPage implements OnInit {
   constructor( private modalController: ModalController,
     private router: Router) { }
 
+    inputs: { text: string }[] = [{ text: '' }];
   ngOnInit() {
   }
   cerrarModal() {
     this.router.navigate(['/inicio']);
+  }
+  agregarInput(index: number) {
+    this.inputs.splice(index + 1, 0, { text: '' }); // Agrega un nuevo elemento en el índice siguiente
+  }
+  ionViewDidEnter() {
+
+    if (this.inputs.length > 1) {
+      this.inputs = [{ text: '' }];
+    }
   }
 }

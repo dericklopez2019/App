@@ -22,4 +22,7 @@ export class InicioPage implements OnInit {
   mostrarMenu() {
     this.menuCtrl.open('first');
   }
+  consultarProductos(){
+    console.log("hola")
+  }
 }

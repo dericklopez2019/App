@@ -9,306 +9,267 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-card>
-    <ion-card-content>
-      <ion-row>
-        <ion-col size="12" class="ion-text-center">
-          <label>INGRESO DE PRODUCTOS</label>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col size="3">
-          <ion-item>
-            <ion-input label="Código Interno:"></ion-input>
-          </ion-item>
-        </ion-col>
-        <ion-col size="3">
-        </ion-col>
-        <ion-col size="6">
-          <ion-button shape="round">
-            <ion-icon name="refresh-outline"> </ion-icon>
-          </ion-button>
-          <ion-button shape="round">
-            <ion-icon name="play-skip-back-outline" > </ion-icon>
-          </ion-button>
-          <ion-button shape="round">
-            <ion-icon name="play-outline" class="invert"> </ion-icon>
-          </ion-button>
-          <ion-button shape="round">
-            <ion-icon name="play-outline"> </ion-icon>
-          </ion-button>
-          <ion-button shape="round">
-            <ion-icon name="play-skip-forward-outline"> </ion-icon>
-          </ion-button>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col size="12" size-lg="9">
-          <ion-item>
-            <ion-input label="Nombre" label-placement="floating" type="text"></ion-input>
-          </ion-item>
-        </ion-col>
+<ion-content>
+  <div class="titulo">Ingresar Productos</div>
+  <div class="contenedor dos-columnas">
+    <ion-item lines="full" class=" codigo regulartitulo">
+      <ion-label position="stacked">Código Interno</ion-label>
+      <ion-input type="number" ></ion-input>
+    </ion-item>
+    <div class="boton-opciones">
+      <ion-button shape="round">
+        <ion-icon name="refresh-outline"> </ion-icon>
+      </ion-button>
+      <ion-button shape="round">
+        <ion-icon name="play-skip-back-outline" > </ion-icon>
+      </ion-button>
+      <ion-button shape="round">
+        <ion-icon name="play-outline" class="invert"> </ion-icon>
+      </ion-button>
+      <ion-button shape="round">
+        <ion-icon name="play-outline"> </ion-icon>
+      </ion-button>
+      <ion-button shape="round">
+        <ion-icon name="play-skip-forward-outline"> </ion-icon>
+      </ion-button>
+    </div>
+  </div>
+  <div class="contenedor contenedor-grid2">
+    <ion-item lines="full" class="nombre ">
+      <ion-label position="stacked" class="regulartitulo">Nombre</ion-label>
+      <ion-input type="text" placeholder="Ingrese nombre del producto"></ion-input>
+    </ion-item>
+    <ion-item lines="full" class="existencia ">
+      <ion-label position="stacked" class="regulartitulo">Existencias</ion-label>
+      <ion-input type="number"></ion-input>
+    </ion-item>
+  </div>
+  <div class="contenedor contenedor-grid3">
+    <ion-item lines="full" class="descuento">
+      <ion-label position="stacked" class="regulartitulo">Descuento:</ion-label>
+      <ion-input type="text" placeholder=""></ion-input>
+    </ion-item>
+    <ion-item lines="full" class="codbarras">
+      <ion-label position="stacked" class="regulartitulo">Cod/Barras/Porveed:</ion-label>
+      <ion-input type="number"></ion-input>
+    </ion-item>
+    <ion-item lines="full" class="codproducto">
+      <ion-label position="stacked" class="regulartitulo">Cód del Porducto</ion-label>
+      <ion-input type="number"></ion-input>
+    </ion-item>
+  </div>
+  <div class="contenedor ">
+    <ion-checkbox class="espacio-checkbox regulartitulo" labelPlacement="end">Aplicar a todas las Sucs. por Cod. Agrup.</ion-checkbox>
+    <ion-checkbox labelPlacement="end" class="regulartitulo">Utilizar el Código interno como Cód Barras</ion-checkbox>
+  </div>
+  <div class="contenedor grid-precios">
+    <div class="grid2">
+      <div>
+        <ion-label class="subtitulo">Precio por unidad:</ion-label>
+      </div>
+      <div></div>
+      <div class="label-izquierda">
+        <ion-label class="precio-fact regulartitulo">Precio costo facturado:</ion-label>
+      </div>
+      <ion-item lines="full" class="precio">
+        <ion-input type="number"></ion-input>
+      </ion-item>
+      <div class="label-izquierda">
+        <ion-label class="precio-fact regulartitulo">Costo de fletes:</ion-label>
+      </div>
+      <ion-item lines="full" class="precio">
+        <ion-input type="number"></ion-input>
+      </ion-item>
+      <div class="label-izquierda">
+        <ion-label class="precio-fact regulartitulo">Otros costos:</ion-label>
+      </div>
+      <ion-item lines="full" class="precio">
+        <ion-input type="number"></ion-input>
+      </ion-item>
+      <div class="label-izquierda">
+        <ion-label class="precio-fact subtitulo">COSTO TOTAL:</ion-label>
+      </div>
+      <ion-item lines="full" class="precio">
+        <ion-input type="number"></ion-input>
+      </ion-item>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="grid4">
+      <div>
+      </div>
+      <ion-label class="label-centrado subtitulo">% Gan.</ion-label>
+      <ion-label class="label-centrado subtitulo">Ganancia:</ion-label>
+      <ion-label class="label-centrado subtitulo">Precio de venta:</ion-label>
+      <div class="label-izquierda">
+        <ion-label class="regulartitulo">Credito:</ion-label>
+      </div>
+      <ion-item lines="full" class="">
+        <ion-input type="number"></ion-input>
+      </ion-item>
+      <ion-item lines="full" class="">
+        <ion-input type="number"></ion-input>
+      </ion-item>
+      <ion-item lines="full" class="">
+        <ion-input type="number"></ion-input>
+      </ion-item>
+      <div class="label-izquierda">
+        <ion-label class="regulartitulo">Plan Salud:</ion-label>
+      </div>
+      <ion-item lines="full" class="">
+        <ion-input type="number"></ion-input>
+      </ion-item>
+      <ion-item lines="full" class="">
+        <ion-input type="number"></ion-input>
+      </ion-item>
+      <ion-item lines="full" class="">
+        <ion-input type="number"></ion-input>
+      </ion-item>
+      <div class="label-izquierda">
+        <ion-label class="regulartitulo">Mayorista:</ion-label>
+      </div>
+      <ion-item lines="full" class="">
+        <ion-input type="number"></ion-input>
+      </ion-item>
+      <ion-item lines="full" class="">
+        <ion-input type="number"></ion-input>
+      </ion-item>
+      <ion-item lines="full" class="">
+        <ion-input type="number"></ion-input>
+      </ion-item>
+      <div class="label-izquierda">
+        <ion-label class="regulartitulo">Publico:</ion-label>
+      </div>
+      <ion-item lines="full" class="">
+        <ion-input type="number"></ion-input>
+      </ion-item>
+      <ion-item lines="full" class="">
+        <ion-input type="number"></ion-input>
+      </ion-item>
+      <ion-item lines="full" class="">
+        <ion-input type="number"></ion-input>
+      </ion-item>
+      <div></div>
+      <div></div>
+      <ion-checkbox class="chekbox regulartitulo" labelPlacement="end">Un solo precio de venta</ion-checkbox>
+      <div>
+        <ion-button  color="medium">
+          <ion-label>Red a 5 c</ion-label>
+        </ion-button>
+        <ion-button  color="medium">
+          <ion-label>Red a 10 c</ion-label>
+        </ion-button>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div class="contenedor grid-precios">
+    <div></div>
+    <div class="grid-descuento">
+      <div class="label-centrado">
+      <ion-label class="subtitulo">PRECIO CON DESCUENTO:</ion-label>
+    </div>
+    <ion-item lines="full" class="">
+      <ion-input type="number"></ion-input>
+    </ion-item>
+  </div>
+  <div class="grid-botones">
+    <div class="botones-conteiner">
+      <ion-button class="botones-centrados" shape="round">
+        <ion-icon name="cart-outline"></ion-icon>
+      </ion-button>
+      <ion-label class="label-centrado regulartitulo">Categorías</ion-label>
+    </div>
+    <div class="botones-conteiner">
+      <ion-button class="botones-centrados" shape="round">
+        <ion-icon name="trending-up-outline"></ion-icon>
+      </ion-button>
+      <ion-label class="label-centrado regulartitulo">Mayoreo</ion-label>
+    </div>
+    <div class="botones-conteiner">
+      <ion-button class="botones-centrados" shape="round">
+        <ion-icon name="bag-add-outline"></ion-icon>
+      </ion-button>
+      <ion-label class="label-centrado regulartitulo">Combos</ion-label>
+    </div>
+    <div class="botones-conteiner">
+      <ion-button class="botones-centrados" shape="round">
+        <ion-icon name="bag-check-outline"></ion-icon>
+      </ion-button>
+      <ion-label class="label-centrado regulartitulo">Bonifica</ion-label>
+    </div>
+  </div>
+  <div></div>
+  <div>
+    <ion-button  color="medium">
+      <ion-label>Datos Adicionales</ion-label>
+    </ion-button>
+    <ion-button  color="medium" >
+      <ion-label>Imagen</ion-label>
+    </ion-button>
+  </div>
+  <div></div>
+  <div>
+    <ion-item>
+      <ion-label position="stacked" class="regulartitulo">USO / UBICACION / INFO </ion-label>
+      <ion-textarea rows="3"></ion-textarea>
+    </ion-item>
+  </div>
+  <div class="grid-unidades">
+    <label class="regulartitulo"> Unida x Fardo/ Dispensador/ Caja.</label>
+    <ion-item lines="full" class="">
+      <ion-input type="number"></ion-input>
+    </ion-item>
+  </div>
+  <div>
+    <ion-item>
+      <ion-label position="stacked" class="regulartitulo">PROD. / SIMILAR - FENERICO / DOSIS </ion-label>
+      <ion-textarea rows="3"></ion-textarea>
+    </ion-item>
+  </div>
+  <div></div>
+  <div>
+    <ion-label class="regulartitulo">Usuario que modificó por última vez los datos del producto:</ion-label>
+  </div>
+  <div class="chekboxrep">
+    <ion-checkbox labelPlacement="end" class="regulartitulo">Rep-2</ion-checkbox>
+  </div>
+  <div></div>
+  <div class="chekboxrep">
+    <ion-checkbox labelPlacement="end" class="regulartitulo">Rep-3</ion-checkbox>
+  </div>
+  </div>
 
-        <ion-col size="12" size-lg="3">
-          <ion-item>
-            <ion-input label="Exitencias" label-placement="floating" type="text"></ion-input>
-          </ion-item>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col size="12" size-lg="3" >
-          <ion-item>
-            <ion-input label="Descuento:" label-placement="floating" type="text"></ion-input>
-          </ion-item>
-        </ion-col>
-        <ion-col size="12" size-lg="3" >
-          <ion-item>
-            <ion-input label="Cod Barras/Proveed:" label-placement="floating" type="text"></ion-input>
-          </ion-item>
-        </ion-col>
-        <ion-col size="12" size-lg="3" >
-          <ion-item>
-            <ion-input label="Cód del Porducto" label-placement="floating" type="text"></ion-input>
-          </ion-item>
-        </ion-col>
-        <ion-col size="12" size-lg="3" >
-          <ion-item>
-            <ion-input label="Bono Farm /Oesi Lbs/ Grupo Bonificacion:" label-placement="floating" type="text"></ion-input>
-          </ion-item>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col size="4">
-          <ion-checkbox labelPlacement="end">Aplicar a todas las Sucs. por Cod. Agrup.</ion-checkbox>
-        </ion-col>
-        <ion-col size="4">
-          <ion-checkbox labelPlacement="end">Utilizar el Código interno como Cód Barras</ion-checkbox>
-        </ion-col>
-        <ion-col size="4" class="ion-align-self-end">
-          <div class="centrar">
-            <ion-button>
-              <ion-icon name="apps-outline"></ion-icon>
-            </ion-button>
-          </div>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col size="4">
-          <ion-label>
-            <h2>Precios por unidad:</h2>
-          </ion-label>
-        </ion-col>
-        <ion-col size="3">
-          <ion-label>
-            <h2>% Gan.</h2>
-          </ion-label>
-        </ion-col>
-        <ion-col size="3">
-          <ion-label>
-            <h2>Ganancia:</h2>
-          </ion-label>
-        </ion-col>
-        <ion-col size="3">
-          <ion-label>
-            <h2>Precio de venta:</h2>
-          </ion-label>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col size="3">
-          <ion-item>
-            <ion-input label="Precio costo facturado:"></ion-input>
-          </ion-item>
-          <ion-item>
-            <ion-input label="Costo de fletes:"></ion-input>
-          </ion-item>
-          <ion-item>
-            <ion-input label="Otros costos:"></ion-input>
-          </ion-item>
-          <ion-item>
-            <ion-input label="COSTO TOTAL:"></ion-input>
-          </ion-item>
-        </ion-col>
-        <ion-col size="3">
-          <ion-item>
-            <ion-input label=" Credito"></ion-input>
-          </ion-item>
-          <ion-item>
-            <ion-input label="Plan Salud"></ion-input>
-          </ion-item>
-          <ion-item>
-            <ion-input label="Mayorista"></ion-input>
-          </ion-item>
-          <ion-item>
-            <ion-input label="Público"></ion-input>
-          </ion-item>
-          <ion-col size="4">
-            <ion-checkbox labelPlacement="end">Un solo precio de venta</ion-checkbox>
-          </ion-col>
-        </ion-col>
-        <ion-col size="3">
-          <ion-item>
-            <ion-input label=""></ion-input>
-          </ion-item>
-          <ion-item>
-            <ion-input label=""></ion-input>
-          </ion-item>
-          <ion-item>
-            <ion-input label=""></ion-input>
-          </ion-item>
-          <ion-item>
-            <ion-input label=""></ion-input>
-          </ion-item>
 
-        </ion-col>
-        <ion-col size="3">
-          <ion-item>
-            <ion-input label=""></ion-input>
-          </ion-item>
-          <ion-item>
-            <ion-input label=""></ion-input>
-          </ion-item>
-          <ion-item>
-            <ion-input label=""></ion-input>
-          </ion-item>
-          <ion-item>
-            <ion-input label=""></ion-input>
-          </ion-item>
-          <ion-col size="4">
-            <ion-button>
-              <ion-label>Red a 5 c</ion-label>
-            </ion-button>
-            <ion-button>
-              <ion-label>Red a 10 c</ion-label>
-            </ion-button>
-           </ion-col>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col size="6"></ion-col>
-        <ion-col size="6">
-          <ion-item>
-            <ion-input label="PRECIO DE DESCUENTO:"></ion-input>
-          </ion-item>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col size="1">
-          <ion-button shape="round">
-            <ion-icon name="cart-outline"></ion-icon>
-          </ion-button>
-          <ion-row>
-            <ion-label>Categorías</ion-label>
-          </ion-row>
-        </ion-col>
-
-        <ion-col size="1">
-          <ion-button shape="round">
-            <ion-icon name="trending-up-outline"></ion-icon>
-          </ion-button>
-          <ion-row>
-            <ion-label>Mayoreo</ion-label>
-          </ion-row>
-        </ion-col>
-
-        <ion-col size="1">
-          <ion-button shape="round">
-            <ion-icon name="bag-add-outline"></ion-icon>
-          </ion-button>
-          <ion-row>
-            <ion-label>Combos</ion-label>
-          </ion-row>
-        </ion-col>
-
-        <ion-col size="1">
-          <ion-button shape="round">
-            <ion-icon name="bag-check-outline"></ion-icon>
-          </ion-button>
-          <ion-row>
-            <ion-label>Bonifica</ion-label>
-          </ion-row>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col size="12">
-          <ion-button>
-            <ion-label>Datos Adicionales</ion-label>
-          </ion-button>
-          <ion-button>
-            <ion-label>Imagen</ion-label>
-          </ion-button>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col size="6">
-          <ion-item>
-            <ion-label position="stacked">USO / UBICACION / INFO </ion-label>
-            <ion-textarea rows="3"></ion-textarea>
-          </ion-item>
-        </ion-col>
-        <ion-col size="4">
-          <ion-item>
-            <ion-input label="Unid x Fardo /Dispensador / Caja "></ion-input>
-          </ion-item>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col size="6">
-          <ion-item>
-            <ion-label position="stacked">PROD. / SIMILAR - FENERICO / DOSIS </ion-label>
-            <ion-textarea rows="3"></ion-textarea>
-          </ion-item>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col size="6">
-          <ion-label>Usuario que modificó por última vez los datos del producto:</ion-label>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col size="6"></ion-col>
-        <ion-col size="6">
-          <ion-checkbox labelPlacement="end">Rep-2</ion-checkbox>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col size="6"></ion-col>
-          <ion-col size="6">
-            <ion-checkbox labelPlacement="end">Rep-3</ion-checkbox>
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col size="6">
-            <ion-button shape="round" >
-              <ion-icon name="document-outline"> </ion-icon>
-              <ion-label>Agregar</ion-label>
-            </ion-button>
-            <ion-button shape="round">
-              <ion-icon name="return-up-back-outline"> </ion-icon>
-              <ion-label>Deshacer</ion-label>
-            </ion-button>
-            <ion-button shape="round">
-              <ion-icon name="save-outline"> </ion-icon>
-              <ion-label>Guardar</ion-label>
-            </ion-button>
-            <ion-button shape="round">
-              <ion-icon name="create-outline"> </ion-icon>
-              <ion-label>Modificar</ion-label>
-            </ion-button>
-          </ion-col>
-          <ion-col size="6">
-            <ion-button shape="round">
-              <ion-icon name="print-outline"> </ion-icon>
-            </ion-button>
-            <ion-button shape="round">
-              <ion-icon name="search-outline"> </ion-icon>
-            </ion-button>
-            <ion-button shape="round">
-              <ion-icon name="exit-outline"> </ion-icon>
-            </ion-button>
-          </ion-col>
-        </ion-row>
-    </ion-card-content>
-  </ion-card>
+  <div class="contenedor dos-columnas" >
+    <div class="">
+      <ion-button color="warning" shape="round" >
+        <ion-icon name="document-outline"> </ion-icon>
+        <ion-label>Agregar</ion-label>
+      </ion-button>
+      <ion-button shape="round">
+        <ion-icon name="return-up-back-outline"> </ion-icon>
+        <ion-label>Deshacer</ion-label>
+      </ion-button>
+      <ion-button color="success" shape="round">
+        <ion-icon name="save-outline"> </ion-icon>
+        <ion-label>Guardar</ion-label>
+      </ion-button>
+      <ion-button color="tertiary" shape="round">
+        <ion-icon name="create-outline"> </ion-icon>
+        <ion-label>Modificar</ion-label>
+      </ion-button>
+    </div>
+    <div class="">
+      <ion-button color="success" shape="round">
+        <ion-icon name="print-outline"> </ion-icon>
+      </ion-button>
+      <ion-button color="warning" shape="round">
+        <ion-icon name="search-outline"> </ion-icon>
+      </ion-button>
+      <ion-button color="danger" shape="round">
+        <ion-icon name="exit-outline"> </ion-icon>
+      </ion-button>
+    </div>
+  </div>
 </ion-content>

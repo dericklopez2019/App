@@ -1,0 +1,58 @@
+ion-button ion-label {
+  text-transform: capitalize;
+}
+.titulo {
+  font-weight: bold;
+  margin-bottom: 28px;
+  color: #001b4a;
+  font-size: 20px;
+  line-height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 0%;
+}
+.regulartitulo{
+  font-size: small;
+  color: #001b4a;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.contenedor {
+  width: 95%;
+  margin: 0 auto;
+}
+ion-item {
+  --border-width: 0;
+  --border-radius: 10px;
+  margin-bottom: 10px;
+}
+ion-input{
+  --border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .dos-columnas {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 2rem;
+  }
+}
+.codigo{
+  max-width: 450px;
+}
+.div-centrado{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.lista-cat{
+  border-radius: 10px;
+}
+.scroll {
+  overflow-y: scroll; /* Asegura que el contenido tenga scroll vertical */
+  height: 20vh; /* Altura del contenido, ajustar según sea necesario */
+}

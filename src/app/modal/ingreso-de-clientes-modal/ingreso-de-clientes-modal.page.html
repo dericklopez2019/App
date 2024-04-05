@@ -10,6 +10,139 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+  <div class="titulo">Ingreso de Clientes</div>
+  <div class="boton-opciones">
+    <ion-button shape="round">
+      <ion-icon name="play-skip-back-outline" > </ion-icon>
+    </ion-button>
+    <ion-button shape="round">
+      <ion-icon name="play-outline" class="invert"> </ion-icon>
+    </ion-button>
+    <ion-button shape="round">
+      <ion-icon name="play-outline"> </ion-icon>
+    </ion-button>
+    <ion-button shape="round">
+      <ion-icon name="play-skip-forward-outline"> </ion-icon>
+    </ion-button>
+    <ion-label class="regulartitulo">Registros: 0/0</ion-label>
+  </div>
+  <div class="contenedor">
+    <ion-item lines="full" class="codigo regulartitulo">
+      <ion-label position="stacked">Código:</ion-label>
+      <ion-input type="number" ></ion-input>
+    </ion-item>
+  </div>
+
+  <div class="contenedor grid-contenedor">
+   <div>
+    <ion-item lines="full" class=" nit regulartitulo">
+      <ion-label position="stacked">NIT/DPI-CUI:</ion-label>
+      <ion-input type="number" ></ion-input>
+    </ion-item>
+    <ion-item lines="full" class="nombre-apellido regulartitulo">
+      <ion-label position="stacked">Nombres:</ion-label>
+      <ion-input type="text" ></ion-input>
+    </ion-item>
+    <ion-item lines="full" class="nombre-apellido regulartitulo">
+      <ion-label position="stacked">Apellidos:</ion-label>
+      <ion-input type="text" ></ion-input>
+    </ion-item>
+   </div>
+   <div class="grid2">
+    <div class="label-izquierda">
+      <ion-label class="precio-fact regulartitulo">Convertir Cliente normal a Cliente con Credito</ion-label>
+    </div>
+    <div>
+      <ion-button class="botones" >
+        <ion-icon name="trending-up-outline"></ion-icon>
+      </ion-button>
+    </div>
+    <div class="label-izquierda">
+      <ion-label class="precio-fact regulartitulo">Ingreso de Presupuesto de Construcción</ion-label>
+    </div>
+    <ion-button class="botones">
+      <ion-icon name="trending-up-outline"></ion-icon>
+    </ion-button>
+   </div>
+  </div>
+  <div class="contenedor">
+    <ion-item lines="full" class=" direccion regulartitulo">
+      <ion-label position="stacked">Direccion:</ion-label>
+      <ion-input type="text" ></ion-input>
+    </ion-item>
+  </div>
+  <div class="contenedor grid7">
+    <div class="label-izquierda">
+      <ion-label class="regulartitulo">Credito:</ion-label>
+    </div>
+    <ion-checkbox class="chekbox regulartitulo" labelPlacement="end">Limite de credito:</ion-checkbox>
+    <div></div>
+    <ion-item lines="full" class="">
+      <ion-input type="number"></ion-input>
+    </ion-item>
+    <div></div>
+    <div class="label-izquierda">
+      <ion-label class="regulartitulo">Días Credito:</ion-label>
+    </div>
+    <ion-item lines="full" class="">
+      <ion-input type="number"></ion-input>
+    </ion-item>
+  </div>
+  <div class="contenedor grid6">
+    <div class="label-izquierda">
+      <ion-label class="regulartitulo">Saldo a Favor x Devol / Monto mínimo Precio Mayorista:</ion-label>
+    </div>
+    <div></div>
+    <ion-item lines="full" class="">
+      <ion-input type="number"></ion-input>
+    </ion-item>
+    <div></div>
+    <div class="label-izquierda">
+      <ion-label class="regulartitulo">Telefono:</ion-label>
+    </div>
+    <ion-item lines="full" class="">
+      <ion-input type="number"></ion-input>
+    </ion-item>
+  </div>
+  <div class="contenedor grid2" >
+    <div class="">
+      <ion-button color="success" shape="round">
+        <ion-icon name="print-outline"> </ion-icon>
+      </ion-button>
+      <ion-button color="warning" shape="round" >
+        <ion-icon name="document-outline"> </ion-icon>
+        <ion-label>Agregar</ion-label>
+      </ion-button>
+      <ion-button shape="round">
+        <ion-icon name="return-up-back-outline"> </ion-icon>
+        <ion-label>Deshacer</ion-label>
+      </ion-button>
+      <ion-button color="success" shape="round">
+        <ion-icon name="save-outline"> </ion-icon>
+        <ion-label>Guardar</ion-label>
+      </ion-button>
+      <ion-button color="tertiary" shape="round">
+        <ion-icon name="create-outline"> </ion-icon>
+        <ion-label>Modificar</ion-label>
+      </ion-button>
+      <ion-button color="danger" shape="round">
+        <ion-icon name="close-circle-outline"> </ion-icon>
+        <ion-label>Eliminar</ion-label>
+      </ion-button>
+    </div>
+    <div class="">
+
+      <ion-button color="success" shape="round">
+        <ion-icon name="print-outline"> </ion-icon>
+      </ion-button>
+      <ion-button color="warning" shape="round">
+        <ion-icon name="search-outline"> </ion-icon>
+      </ion-button>
+      <ion-button color="danger" shape="round">
+        <ion-icon name="exit-outline"> </ion-icon>
+      </ion-button>
+    </div>
+  </div>
   <ion-card>
     <ion-card-content>
       <ion-row>

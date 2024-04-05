@@ -3,38 +3,58 @@
     <ion-buttons slot="start">
       <ion-menu-button menu="first" color="light"></ion-menu-button>
     </ion-buttons>
-    <ion-title>Sucursal: SALA DE VENTAS</ion-title>
+    <ion-title></ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true" class="ion-padding">
-  <div class="button-container">
-    <div class="button-content">
-      <ion-button>
-        <ion-icon name="book-outline" class="icon-large"></ion-icon>
-        <ion-label>Consultar Productos</ion-label>
-      </ion-button>
-    </div>
-    <div class="button-content">
-      <ion-button>
-        <ion-icon name="calculator-outline" class="icon-large"></ion-icon>
-      </ion-button>
-    </div>
-    <div> <ion-label>Ayuda del sistema</ion-label></div>
-    <div class="button-content">
-    <ion-button>
-        <ion-icon name="calculator-outline" class="icon-large"></ion-icon>
-        <ion-label>Otros Reportes y Opciones</ion-label>
-      </ion-button>
-    </div>
-    <div> N/A</div>
-    <div> Fomularios mini</div>
-    <div class="button-content">
-      <ion-button>
-        <ion-label>Actualizar el Inventario</ion-label>
-      </ion-button>
-    </div>
+  <div class="titulo">
+    <span class="titulo1">Sucursal:</span>
+    <span class="titulo2"> SALA DE VENTAS</span>
   </div>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" size-lg="3" size-md="4" size-sm="6">
+        <ion-card class="mi-card" (click)="consultarProductos()">
+          <ion-card-content class="contenido">
+            <div class="icono-container">
+              <ion-icon name="book-outline" class="icono"></ion-icon>
+            </div>
+            <span class="nombre">Consultar Productos</span>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="12" size-lg="3" size-md="4" size-sm="6">
+        <ion-card class="mi-card">
+          <ion-card-content class="contenido">
+            <div class="icono-container">
+              <ion-icon name="stats-chart-outline" class="icono"></ion-icon>
+            </div>
+            <span class="nombre">Otros Reportes y Opciones</span>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="12" size-lg="3" size-md="4" size-sm="6">
+        <ion-card class="mi-card">
+          <ion-card-content class="contenido">
+            <div class="icono-container">
+              <ion-icon name="bag-check-outline" class="icono"></ion-icon>
+            </div>
+            <span class="nombre">Actualizar el Inventario</span>
+          </ion-card-content>
+        </ion-card>
+      </ion-col> <ion-col size="12" size-lg="3" size-md="4" size-sm="6">
+        <ion-card class="mi-card">
+          <ion-card-content class="contenido">
+            <div class="icono-container">
+              <ion-icon name="calculator-outline" class="icono"></ion-icon>
+            </div>
+            <span class="nombre">Calculadora</span>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
   <div>
     <label>-- LA LICENCIA DE USO NO ESTA AUTORIZADA --</label>
   </div>

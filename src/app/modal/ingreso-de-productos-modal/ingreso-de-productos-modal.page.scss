@@ -8,3 +8,184 @@ ion-button ion-label {
   display: grid;
   place-items: center;
 }
+.titulo {
+  font-weight: bold;
+  margin-bottom: 28px;
+  color: #001b4a;
+  font-size: 20px;
+  line-height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 0%;
+}
+.subtitulo{
+  font-size: medium;
+  color: red;
+  font-size: 20px;
+  line-height: 28px;
+}
+.regulartitulo{
+  font-size: small;
+  color: #001b4a;
+  font-size: 16px;
+  line-height: 24px;
+}
+.card{
+  padding: 20px;
+}
+
+
+
+ion-item {
+  --border-width: 0;
+  --border-radius: 10px;
+  margin-bottom: 10px;
+}
+ion-input{
+  --border-radius: 10px;
+}
+
+.contenedor {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.boton-opciones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+}
+.codigo{
+  max-width: 300px;
+}
+@media (min-width: 768px) {
+  .dos-columnas {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 2rem;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .contenedor-grid2 {
+      display: grid;
+      grid-template-areas: "izquierda derecha";
+      grid-template-columns: 70% 30% ;
+      grid-auto-flow: column;
+      column-gap: 2rem;
+  }
+  .nombre {
+      grid-area: izquierda;
+
+
+  }
+  .existencia {
+      grid-area: derecha ;
+      max-width: 300px;
+  }
+
+  .contenedor-grid3 {
+    display: grid;
+    grid-template-areas: "izquierda centro derecha";
+    grid-template-columns: 30% 30% 30%;
+    grid-auto-flow: column;
+    column-gap: 2rem;
+  }
+  .descuento {
+      grid-area: izquierda;
+  }
+  .codbarras {
+      grid-area: centro ;
+  }
+  .codproducto{
+    grid-area: derecha;
+  }
+
+  .contenedor-grid6{
+    display: grid;
+    grid-template-areas: "uno dos tres cuatro cinco seis siete";
+    grid-template-columns: 11% 16% 10% 5% 16% 16% 16%;
+    grid-auto-flow: column;
+    column-gap: 1rem;
+  }
+
+
+
+}
+.label-centrado{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.espacio-checkbox{
+  margin-right: 25px;
+  margin-bottom: 20px;
+}
+
+
+
+@media (min-width: 768px) {
+  .grid-precios{
+    display: grid;
+    grid-template-columns: 40% 58%;
+
+  }
+  .grid2{
+    display: grid;
+    grid-template-areas: "labelprecio inputprecio";
+    grid-template-columns: 27% 35%;
+  }
+  .grid4{
+    display: grid;
+    grid-template-areas: "labelgan inputgan1 inputgan2 inputgan3";
+    grid-template-columns: 9% 27% 27% 27%;
+    column-gap: 1rem;
+  }
+  .label-izquierda{
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+  }
+  .chekbox{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+  }
+
+  .grid-descuento{
+    display: grid;
+    grid-template-columns: 38% 42%;
+  }
+
+  .grid-botones{
+    column-gap: 1rem;
+  }
+  .grid-unidades{
+    display: grid;
+    grid-template-columns: 40%;
+    margin-left: 100px;
+    margin-top: 50px;
+  }
+
+
+  .chekboxrep{
+    margin-left: 175px;
+  }
+}
+.grid-botones{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+
+}
+
+.botones-centrados{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
