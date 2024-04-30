@@ -1,3 +1,24 @@
+.titulo {
+  font-weight: bold;
+  margin-bottom: 28px;
+  color: #001b4a;
+  font-size: 20px;
+  line-height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 0%;
+}
+ion-button ion-label {
+  text-transform: capitalize;
+}
+.contenedor {
+  width: 95%;
+  margin: 0 auto;
+
+}
+
 ion-searchbar {
   --border-radius: 20px;
 }
@@ -6,8 +27,15 @@ ion-searchbar {
   width: 100%;
   height: 100%;
 }
+.contenido{
 
+  height: 525px;
 
+}
+.boton-agregar{
+  text-align: center;
+  margin-bottom: 10px;
+ }
 //telefono
 @media(min-width: 480px){
   .ag-theme-quartz .ag-root-wrapper {
@@ -21,8 +49,17 @@ ion-searchbar {
   .ag-theme-quartz .ag-root-wrapper {
     font-size: 12px;
   }
-
+  .grid2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+  }
+  .boton-agregar{
+    margin-top: 6px;
+    text-align: left;
+  }
 }
+
 
 //desktop
 @media(min-width:992px)
@@ -30,19 +67,31 @@ ion-searchbar {
   .ag-theme-quartz .ag-root-wrapper {
     font-size: 14px;
   }
+  .tabla{
+    width: 100%;
+    height: 100%;
 
+  }
 }
 
 
 //desktopXl
 @media(min-width:1200px)
 {
+
   .ag-theme-quartz .ag-root-wrapper {
     font-size: 16px;
   }
   .tabla{
-    width: 60%;
+    width: 63%;
     height: 100%;
 
   }
+  .contenido{
+
+  margin-left: 50px;
+  margin-top: 10px;
+
+  }
+
 }

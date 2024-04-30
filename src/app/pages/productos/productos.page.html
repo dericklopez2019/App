@@ -10,21 +10,28 @@
 <ion-content>
   <ion-card>
     <ion-card-header>
-      Productos
+      <div class="titulo">Productos</div>
     </ion-card-header>
     <ion-card-content>
+  <div class="contenedor grid2">
+    <div>
       <ion-searchbar placeholder="Buscar productos" (ionChange)="onSearch($event)"></ion-searchbar>
-      <ion-button shape="round">
-        Agregar Producto
+    </div>
+    <div class="boton-agregar">
+      <ion-button (click)="mostrarModalProductos()" color="warning" shape="round" >
+        <ion-icon name="document-outline"> </ion-icon>
+        <ion-label> Agregar Produtco</ion-label>
       </ion-button>
-      <div  style="height: 550px;">
+    </div>
+  </div>
+      <div class="contenido">
         <ag-grid-angular
           class="tabla"
           [class]="themeClass"
           [rowData]="filteredRowData"
           [columnDefs]="colDefs"
+          [paginationAutoPageSize]="true"
           [pagination]="true"
-
         >
         </ag-grid-angular>
       </div>
