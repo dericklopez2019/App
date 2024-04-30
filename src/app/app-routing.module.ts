@@ -30,7 +30,11 @@ const routes: Routes = [
   {
     path: 'ingreso-de-clientes-modal',
     loadChildren: () => import('./modal/ingreso-de-clientes-modal/ingreso-de-clientes-modal.module').then( m => m.IngresoDeClientesModalPageModule)
+  },  {
+    path: 'productos',
+    loadChildren: () => import('./pages/productos/productos.module').then( m => m.ProductosPageModule)
   },
+
 ];
 
 @NgModule({

@@ -16,7 +16,7 @@
       {
         "icon": "bag-outline",
         "name": "Ingreso de Productos",
-        "redirectTo": "/ingreso-de-productos-modal"
+        "redirectTo": "/productos"
       },
       {
         "icon": "archive-outline",

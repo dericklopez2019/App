@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button menu="first" color="light"></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Producto</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      Productos
+    </ion-card-header>
+    <ion-card-content>
+      <ion-searchbar placeholder="Buscar productos" (ionChange)="onSearch($event)"></ion-searchbar>
+      <ion-button shape="round">
+        Agregar Producto
+      </ion-button>
+      <div  style="height: 550px;">
+        <ag-grid-angular
+          class="tabla"
+          [class]="themeClass"
+          [rowData]="filteredRowData"
+          [columnDefs]="colDefs"
+          [pagination]="true"
+
+        >
+        </ag-grid-angular>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
